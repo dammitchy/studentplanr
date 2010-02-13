@@ -8,8 +8,8 @@ class HomeController < ApplicationController
     session[:token] = client.auth_handler.upgrade()
     client.authsub_token = session[:token] if session[:token]
     
-    @feeds = client.get("http://www.google.com/calendar/feeds/default/allcalendars/full").to_xml
-    
+    feed = client.get("http://www.google.com/calendar/feeds/default/allcalendars/full").to_xml
+    entry = feed.elements['entry']
          
   end
   
