@@ -7,13 +7,5 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
-  
-  def client
-    if self.nil?
-      return GData::Client::DocList.new
-    else
-      return self
-    end
-    
-  end
+
 end
