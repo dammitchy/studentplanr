@@ -9,11 +9,12 @@ class HomeController < ApplicationController
   end
   
   def home
+    client = GData::Client::DocList.new
     scope = 'http://www.google.com/calendar/feeds/'
     next_url = 'http://studentplanr.heroku.com/home/'
     secure = false  # set secure = true for signed AuthSub requests
     sess = true
-    @authsub_link = GData::Auth::AuthSub.get_url(next_url, scope, secure, sess)
+    @authsub_link = client.authsub_url(next_url, secure, sess, domain)
   end
   
 end
