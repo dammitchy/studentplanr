@@ -9,3 +9,7 @@ Motivation
 The life of college students is rather hectic and information is scattered throughout Google Calendar, course wikis, Compass, newsgroups, etc. Because of this, HomeworkSync is a centralized hub where students can collaborate to add important information, due dates, and office hours for the class to share.
 
 A vast majority of students currently use Google Calendar to track assignments although it is not perfectly fit to handle many of the other necessities of school life. We integrate with Google Calendar's strengths while building off of the necessities lacking in Compass and course wikis. Additionally, teachers need a centralized area where students can be automatically informed of new assignments, due dates, and grading and feedback can become an easy and streamlined process.
+
+Change Log:
+* Added Google OAuth functionality and token caching
+* Initial creation of rails project
