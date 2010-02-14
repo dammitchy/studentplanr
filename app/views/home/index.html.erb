@@ -9,3 +9,7 @@ header: <%= header[0] %> "=>" <%= header[1] %>
 <% end %>
 
 location : [ <%= @headers["location"] %> ]
+
+<% @feed.each do |f| %>
+feed: <%= f %>
+<% end %>
