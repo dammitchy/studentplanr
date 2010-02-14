@@ -13,7 +13,7 @@ class HomeController < ApplicationController
 # then use that to get at the actual calendars xml
   @response= client.get("http://www.google.com/calendar/feeds/default/allcalendars")
 
-     @url = @response.headers['location']
+     puts @response.headers['location']
 
 
   end
