@@ -1,17 +1,5 @@
 You've been authenticated
 
 Your token is <%= @token %>
-Your feed is <%= @feed %>
 
 
-<% @headers.each do |header| %>
-header: <%= header[0] %> "=>" <%= header[1] %>
-<% end %>
-
-location : [ <%= @headers["location"] %> ]
-
-
-
-<p>
-
-<%= @feeds["author"].name %>
