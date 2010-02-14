@@ -11,6 +11,6 @@ header: <%= header[0] %> "=>" <%= header[1] %>
 location : [ <%= @headers["location"] %> ]
 
 <% @feeds.each do |f| %>
-  Feed with <%= f %>
+  Feed with <%= f.name %>
 <% end %>
 
