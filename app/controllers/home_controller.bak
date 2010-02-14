@@ -11,7 +11,7 @@ class HomeController < ApplicationController
 
 # need to scrape the location of the 302 Redirect that we get as response
 # then use that to get at the actual calendars xml
- @headers = client.get("http://www.google.com/calendar/feeds/default/allcalendars").headers
+ @headers = client.get("http://www.google.com/calendar/feeds/default/owncalendars").headers
 
 
 
