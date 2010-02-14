@@ -15,7 +15,7 @@ class HomeController < ApplicationController
 
 
 
-feed = client.get(@headers["location"]).to_xml
+@feed = client.get(@headers["location"]).to_xml
 
   end
   
