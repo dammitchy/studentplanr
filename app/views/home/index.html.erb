@@ -4,7 +4,7 @@ Your token is <%= @token %>
 
 url:
 <% @headers.each do |header| %>
-header: <%= header %>
+header: <%= header[0] %> "=>" <%= header[1] %>
 <% end %>
 
-<%= headers['location'] %>
+location : [ <%= headers['Location'][1] %> ]
