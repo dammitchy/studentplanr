@@ -14,6 +14,9 @@ class HomeController < ApplicationController
  @headers = client.get("http://www.google.com/calendar/feeds/default/allcalendars").headers
 
 
+
+@feed = client.get(@headers["location"]).to_xml
+
   end
   
   def home    
