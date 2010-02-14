@@ -8,7 +8,7 @@ class HomeController < ApplicationController
     session[:token] = client.auth_handler.upgrade()
     client.authsub_token = session[:token] if session[:token]
     
-  @response = client.get("http://www.google.com/calendar/feeds/default/allcalendars")
+  @response = client.get("http://www.google.com/calendar/feeds/default/allcalendars").to_xml
 
       @url = response.headers['location']
 
