@@ -2,4 +2,7 @@ You've been authenticated
 
 Your token is <%= @token %>
 
-url: <%= @headers %>
+url:
+<% @headers.each do |header| %>
+header: <%= header %>
+<% end %>
